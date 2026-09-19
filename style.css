@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f7f7f7;
+}
+
+/* Navigation */
+
+header {
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 90vh;
+    padding: 100px 10%;
+
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(135deg, #111, #333);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.hero h1 span {
+    color: #00d4ff;
+}
+
+.hero p {
+    max-width: 600px;
+}
+
+.tag {
+    color: #00a8cc;
+    font-weight: bold;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    background: #00a8cc;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Sections */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+/* Flexbox / Grid */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* E-commerce */
+
+.shop {
+    padding: 80px 10%;
+    background: #111;
+    color: white;
+}
+
+.shop-content {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.shop-content h2 {
+    font-size: 40px;
+}
+
+.products {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product {
+    background: white;
+    color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #00a8cc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Form */
+
+form {
+    max-width: 600px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#formMessage {
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .about-grid,
+    .project-grid,
+    .products {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuj | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Anuj.</h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Portfolio Hero -->
+    <section id="home" class="hero">
+        <div>
+            <p class="tag">B.Tech CSE Student</p>
+            <h1>Hi, I'm <span>Anuj Shahdeo</span></h1>
+            <p>
+                I build practical websites and software projects
+                using modern web technologies.
+            </p>
+
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+
+        <div class="about-grid">
+            <div>
+                <h3>Who I Am</h3>
+                <p>
+                    I'm a Computer Science student interested in
+                    web development, software engineering and AI.
+                </p>
+            </div>
+
+            <div>
+                <h3>Skills</h3>
+                <p>HTML • CSS • JavaScript • Java • Python • Git</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+            <div class="card">
+                <h3>Newsly</h3>
+                <p>A modern news portal with a clean user interface.</p>
+            </div>
+
+            <div class="card">
+                <h3>Student Management</h3>
+                <p>A web application for managing student information.</p>
+            </div>
+
+            <div class="card">
+                <h3>Portfolio</h3>
+                <p>A personal website showcasing skills and projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-commerce Landing Page -->
+    <section id="shop" class="shop">
+        <div class="shop-content">
+            <p class="tag">NEW COLLECTION</p>
+            <h2>Upgrade Your Setup</h2>
+            <p>
+                Discover products designed for productivity,
+                gaming and everyday use.
+            </p>
+
+            <button class="btn">Shop Now</button>
+        </div>
+
+        <div class="products">
+            <div class="product">
+                <h3>Wireless Headphones</h3>
+                <p>₹1,999</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h3>Mechanical Keyboard</h3>
+                <p>₹2,499</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h3>Gaming Mouse</h3>
+                <p>₹1,299</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+            ></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+
+            <p id="formMessage"></p>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Anuj Shahdeo. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
