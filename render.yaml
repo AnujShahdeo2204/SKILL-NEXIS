@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: skill-nexis-backend
+    env: node
+    rootDir: week 4/backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
